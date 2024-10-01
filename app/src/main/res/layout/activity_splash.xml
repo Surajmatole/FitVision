@@ -27,4 +27,16 @@
         android:textColor="@color/black"
         android:textSize="25sp" />
 
+    <TextView
+        android:id="@+id/tvsplashtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvsplashtitle"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/bree_serif"
+        android:text="Your Hard work our traning.."
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
 </RelativeLayout>
