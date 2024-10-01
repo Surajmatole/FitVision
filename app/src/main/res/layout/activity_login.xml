@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Gray"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/IvLoginLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/fitvisionyellow"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvMainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Login Now"
+        android:textColor="@color/black"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        app:passwordToggleEnabled="false">
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:drawableStart="@drawable/ic_person"
+        android:hint="Username:"
+        android:padding="8dp"
+        android:textSize="13sp"
+        android:background="@drawable/et_bg_confirm_number"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textColorHint="@color/black"
+
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="30dp"
+        >
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Password:"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textStyle="bold"
+            android:background="@drawable/et_bg_confirm_number"
+            android:textSize="13sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvloginforgotpassword"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/signupdesign"
+        android:text="Forgot Password"
+        android:gravity="right"
+        android:textColor="@color/blue2"
+        android:textSize="16sp"
+
+
+        />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btloginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:background="@drawable/et_bg_confirm_number"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:backgroundTint="@color/orange"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvloginNewUser"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/signupdesign"
+        android:text="Dont have an Account? Register "
+        android:textAlignment="center"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/blue2"
+        android:textSize="12sp"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btsignwithgoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/common_google_signin_btn_text_dark_normal"
+        android:text="Sign in with google"
+
+        android:textColor="@color/black" />
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+

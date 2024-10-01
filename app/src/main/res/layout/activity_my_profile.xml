@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/Gray"
+    >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/myprofileimage"
+        android:src="@drawable/welcomegirl"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnmyprofileditProfile"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_bg_confirm_number"
+        android:backgroundTint="@color/orange"
+        android:layout_margin="30dp"
+        android:text="Edit Profile"
+        android:fontFamily="@font/black_han_sans"
+
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvmyprofilename"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/tvmyprofiledesigns"
+        android:text="Name :"
+        android:textAlignment="textStart"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/black_han_sans"
+        android:textSize="15sp"
+        tools:ignore="RtlCompat"
+
+        />
+
+    <TextView
+        android:id="@+id/tvmyprofilemobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tvmyprofiledesigns"
+        android:text="Mobile no :"
+        android:textAlignment="textStart"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/black_han_sans"
+        android:textSize="15sp"
+        tools:ignore="RtlCompat"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvmyprofileemailid"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tvmyprofiledesigns"
+        android:text="Email-id :"
+        android:textAlignment="textStart"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/black_han_sans"
+        android:textSize="15sp"
+        tools:ignore="RtlCompat"
+
+        />
+
+    <TextView
+        android:id="@+id/tvmyprofileusername"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tvmyprofiledesigns"
+        android:text="Username :"
+        android:textAlignment="textStart"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/black_han_sans"
+        android:textSize="15sp"
+        tools:ignore="RtlCompat"
+
+        />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btsignout"
+        android:text="Signout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="15sp"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/black_han_sans"
+        android:background="@drawable/et_bg_confirm_number"
+        android:backgroundTint="@color/black2"
+
+
+
+
+
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

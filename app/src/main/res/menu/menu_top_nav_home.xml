@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/menu_home_QRcode"
+            app:showAsAction="always"
+            android:title="QR Code.."
+            android:icon="@drawable/ic_qr"
+            android:iconTint="@color/white"
+
+
+            />
+        <item
+            android:id="@+id/myloc"
+            android:title="My location"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_location"
+            />
+
+        <item
+            android:id="@+id/more"
+            android:icon="@drawable/baseline_expand_more_24"
+            android:title="more"
+            app:showAsAction="always">
+
+
+            <menu>
+
+                <item
+                    android:id="@+id/menu_home_Settings"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_setting"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/menu_home_Contactus"
+                    android:title="Contact Us"
+                    android:icon="@drawable/ic_contact_us"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/menu_home_aboutus"
+                    android:title="About Us"
+                    android:icon="@drawable/ic_info"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/menu_home_myprofile"
+                    android:title="My Profile"
+                    android:icon="@drawable/ic_person"
+                    app:showAsAction="always"
+                    />
+                <item
+                    android:id="@+id/menu_home_logout"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_logout"
+                    app:showAsAction="always"
+                    />
+
+
+            </menu>
+
+        </item>
+
+
+    </menu>

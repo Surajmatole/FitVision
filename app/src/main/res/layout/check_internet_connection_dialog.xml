@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/Gray"
+    android:gravity="center"
+     >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:lottie_rawRes="@raw/eifi_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:scaleType="fitXY"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opps!"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/black_han_sans"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Internet Connection"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bree_serif"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Check Your  Connection"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bree_serif"
+        />
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    android:id="@+id/btretry"
+    android:text="Try Again"
+    android:textColor="@color/white"
+    android:fontFamily="@font/bungee_inline"
+    android:background="@drawable/btn_bg_shape"
+    />
+</LinearLayout>

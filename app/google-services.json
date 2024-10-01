@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "312810640506",
+    "project_id": "fitvision-f53df",
+    "storage_bucket": "fitvision-f53df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312810640506:android:2b9608f36fde1f56f397c3",
+        "android_client_info": {
+          "package_name": "com.example.fitvision"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWBWzirGZDhh5ha6nDdZ-0E6Vv-zYf9Ho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

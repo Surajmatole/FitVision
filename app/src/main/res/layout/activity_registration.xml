@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2"
+    tools:context=".Registration_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+
+            android:id="@+id/IvregisterLogo"
+            android:layout_width="216dp"
+            android:layout_height="194dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/fitvisionyellow"
+            android:layout_marginTop="35dp"
+            />
+
+        <TextView
+            android:id="@+id/tvMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16sp"
+            android:fontFamily="@font/black_han_sans"
+            android:text="Create an Account"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/etname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/et_bg_confirm_number"
+                    android:layout_marginRight="30dp"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:hint="Enter Your Name:"
+                    android:padding="8dp"
+                    android:drawablePadding="5dp"
+                    android:shadowColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/et_bg_confirm_number">
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                app:ccpDialog_keyboardAutoPopup="false"
+                app:ccp_autoFormatNumber="true"
+                app:ccp_showArrow="true"
+                app:ccp_showFlag="true"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="true"
+                app:ccp_countryPreference="IN"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/etmobile_no"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="35dp"
+                android:hint="0000000000"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/etemailid"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="Enter Your Email-id:"
+                android:padding="8dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/et_bg_confirm_number"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHint="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+
+            <EditText
+                android:id="@+id/etusername"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/ic_person"
+                android:hint="Enter Your Username:"
+                android:inputType="text"
+                android:padding="8dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/et_bg_confirm_number"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHint="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:hint="Enter Your Password:"
+                android:inputType="number"
+                android:padding="8dp"
+                android:drawablePadding="5dp"
+                android:background="@drawable/et_bg_confirm_number"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHint="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Create an account"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/et_bg_confirm_number"
+            android:backgroundTint="@color/orange"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
